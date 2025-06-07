@@ -1,0 +1,22 @@
+[
+  {
+    "input": {"trip_duration_days": 3, "miles_traveled": 180, "total_receipts_amount": 150.75},
+    "expected_output": 200.50
+  },
+  {
+    "input": {"trip_duration_days": 5, "miles_traveled": 500, "total_receipts_amount": 300.00},
+    "expected_output": 450.00
+  },
+  {
+    "input": {"trip_duration_days": 1, "miles_traveled": 50, "total_receipts_amount": 25.50},
+    "expected_output": 70.00
+  },
+  {
+    "input": {"trip_duration_days": 2, "miles_traveled": 0, "total_receipts_amount": 60.00},
+    "expected_output": 100.00
+  },
+  {
+    "input": {"trip_duration_days": 0, "miles_traveled": 100, "total_receipts_amount": 50.00},
+    "expected_output": 0.00
+  }
+]
