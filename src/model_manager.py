@@ -316,6 +316,7 @@ def get_model_status():
         return status
     except Exception as e: return f"Error reading model info: {e}"
 
+
 def delete_saved_model():
     try:
         files_to_delete = [MODEL_PATH, MODEL_INFO_PATH, M2CGEN_MODEL_PATH]
@@ -334,6 +335,7 @@ def delete_saved_model():
         print(f"Error deleting saved model: {e}")
         return False
 
+
 def load_saved_model():
     global joblib
     if joblib is None:
@@ -347,6 +349,7 @@ def load_saved_model():
     except Exception as e:
         print(f"Error loading saved model: {e}")
         return None, None, None, None
+
 
 def main():
     global np, pd, m2c, XGBRegressor, RandomForestRegressor, KFold, GridSearchCV, cross_val_score, train_test_split, mean_squared_error, mean_absolute_error, joblib, re
