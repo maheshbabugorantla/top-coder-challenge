@@ -171,7 +171,6 @@ def calculate_reimbursement(trip_details):
             int(miles_traveled // 50),    # miles_bucket
             int(receipts_amount // 50),   # receipts_bucket
             int(miles_per_day // 25),     # miles_per_day_bucket
-            int(round((receipts_amount * 100)) % 100), # receipt_cents
             int(spend_per_day // 25),     # spend_per_day_bucket
         ]
 
