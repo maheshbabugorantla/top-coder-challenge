@@ -162,7 +162,7 @@ def train_optimized_model():
     # KFold requires n_splits <= n_samples.
     # If only 1 sample, KFold cannot be used.
     num_samples = X.shape[0]
-    n_cv_splits = min(10, num_samples) if num_samples > 1 else 1
+    n_cv_splits = min(5, num_samples) if num_samples > 1 else 1
 
     if num_samples < 2 : # Cannot do any CV with less than 2 samples.
         print("Dataset too small for any cross-validation (<2 samples). Using simplified training.")
